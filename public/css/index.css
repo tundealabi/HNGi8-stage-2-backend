@@ -1,0 +1,80 @@
+/* Global */
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+/* General */
+
+.btn-header,
+.btn-cv {
+  color: #fff;
+  background-color: #10b2fe;
+  border-color: #10b2fe;
+}
+
+/* About Section */
+
+.name-title-section {
+  margin-top: 2rem;
+}
+
+.hi,
+.name,
+.title {
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-style: italic;
+}
+
+.btn-cv {
+  margin-bottom: 2rem;
+}
+
+.about-me > .card {
+  background-color: ghostwhite;
+}
+
+/* contact */
+
+#contact {
+  height: 100vh;
+  padding: 1rem;
+}
+.reach-me-header {
+  text-align: center;
+  text-transform: capitalize;
+  padding-top: 3rem;
+  margin-bottom: 3.62rem;
+}
+.submit-btn {
+  display: block;
+  width: 80%;
+  margin: 1rem auto;
+  text-transform: capitalize;
+}
+
+/* Media Queries */
+@media (max-width: 300px) {
+  #contact {
+    padding: 0.5rem;
+  }
+}
+@media (min-width: 600px) {
+  .contact-card {
+    width: 32rem;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  .home-section {
+    height: 100vh;
+  }
+  .name-title-section,
+  .about-me {
+    align-self: center;
+  }
+}

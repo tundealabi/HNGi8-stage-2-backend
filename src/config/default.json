@@ -1,0 +1,14 @@
+{
+  "nodemailer": {
+    "mailServerUser": "",
+    "mailServerPass": "",
+    "mailServerOauthClientId": "",
+    "mailServerOauthClientSecret": "",
+    "mailServerOauthRefreshToken": "",
+    "mailServerOauthAccessToken": "",
+    "emailFrom": ""
+  },
+  "app": {
+    "appPort": ""
+  }
+}

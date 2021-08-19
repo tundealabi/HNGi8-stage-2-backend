@@ -1,0 +1,11 @@
+{
+  "nodemailer": {
+    "mailServerUser": "EMAIL_SERVER_USER",
+    "mailServerPass": "EMAIL_SERVER_PASS",
+    "mailServerOauthClientId": "OAUTH_CLIENT_ID",
+    "mailServerOauthClientSecret": "OAUTH_CLIENT_SECRET",
+    "mailServerOauthRefreshToken": "OAUTH_REFRESH_TOKEN",
+    "mailServerOauthAccessToken": "OAUTH_ACCESS_TOKEN",
+    "emailFrom": "EMAIL_FROM"
+  }
+}

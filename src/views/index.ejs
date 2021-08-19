@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Portfolio | HNG</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"
+    ></script> -->
+
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+
+  <body>
+    <%- include('header') -%>
+
+    <main id="particles-js">
+      <div class="container">
+        <div class="row home-section">
+          <div class="col-12 col-md-6 col-lg-5 name-title-section">
+            <p class="h3 hi">Hi,</p>
+            <p class="h3 name">I'm Tunde Alabi</p>
+            <p class="h3 title">Fullstack Developer</p>
+            <a
+              class="btn btn-cv"
+              href="/assets/tunde-resume-cv.pdf"
+              role="button"
+              download
+              >Get My CV</a
+            >
+          </div>
+          <div class="col-12 col-md-6 col-lg-7 about-me text-center">
+            <!-- card one -->
+            <div class="card mb-4 animate__animated animate__zoomInRight">
+              <div class="card-body">
+                <p class="card-text">
+                  I am a result driven Full-Stack developer on the MERN stack
+                  and with a passion for developing innovative programs. I love
+                  to build new and challenging applications.
+                </p>
+              </div>
+            </div>
+            <!-- card two -->
+            <div class="card mb-4 animate__animated animate__zoomInLeft">
+              <div class="card-body">
+                <p class="card-text">
+                  I have experience working with JavaScript, jQuery,
+                  ReactJS(redux), VueJS(vuex) Material UI, Vuetify, Styled
+                  Components, Typescript, NextJs, NuxtJs, NodeJS, ExpressJs,
+                  PostgreSQL, MongoDB, Git, Github, Firebase.
+                </p>
+              </div>
+            </div>
+            <!-- card three -->
+            <div class="card mb-4 animate__animated animate__zoomInRight">
+              <div class="card-body">
+                <p class="card-text">
+                  Learning new things is huge for me. I hope to join a team
+                  where I will ultimately evolve and build the future.
+                </p>
+              </div>
+            </div>
+            <!-- card four -->
+            <div class="card animate__animated animate__zoomInLeft">
+              <div class="card-body">
+                <p class="card-text">
+                  I would love above anything, to work in a team and help build
+                  the next big technological application. I hope I can be the
+                  X-factor in your team.
+                </p>
+              </div>
+            </div>
+            <!-- end of cards -->
+          </div>
+        </div>
+      </div>
+    </main>
+    <div
+      class="toast align-items-center"
+      role="alert"
+      aria-live="assertive"
+      aria-atomic="true"
+      id="successToast"
+    >
+      <div class="d-flex">
+        <div class="toast-body">Hi, Thank you for reaching out. cheers!!.</div>
+        <button
+          type="button"
+          class="btn-close me-2 m-auto"
+          data-bs-dismiss="toast"
+          aria-label="Close"
+        ></button>
+      </div>
+    </div>
+    <%- include('contact') -%> <%- include('footer') -%>
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"
+      integrity="sha512-jq8sZI0I9Og0nnZ+CfJRnUzNSDKxr/5Bvha5bn7AHzTnRyxUfpUArMzfH++mwE/hb2efOo1gCAgI+1RMzf8F7g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="/js/particles.js"></script> -->
+    <script src="/js/script.js"></script>
+    <!-- <script src="/js/index.js"></script> -->
+  </body>
+</html>

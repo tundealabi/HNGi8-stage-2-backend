@@ -1,0 +1,90 @@
+<div id="contact">
+  <p class="h3 reach-me-header">reach me</p>
+  <div class="card contact-card">
+    <div class="card-header text-center">Contact Me</div>
+    <div class="card-body">
+      <form id="form" novalidate>
+        <!-- name -->
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="floatingName"
+            placeholder="Tunde Alabi"
+            required
+          />
+          <label for="floatingName">Name</label>
+          <div class="invalid-feedback">
+            Name can only contain alphabets, 3 - 15 characters
+          </div>
+        </div>
+        <!-- email -->
+        <div class="form-floating mb-3">
+          <input
+            type="email"
+            class="form-control"
+            id="floatingMail"
+            placeholder="name@example.com"
+            required
+          />
+          <label for="floatingMail">Email address</label>
+          <div class="invalid-feedback">Email is not valid</div>
+        </div>
+        <!-- phone -->
+        <div class="form-floating mb-3">
+          <input
+            type="tel"
+            class="form-control"
+            id="floatingPhone"
+            placeholder="Phone"
+            required
+          />
+          <label for="floatingPhone">Phone</label>
+          <div class="invalid-feedback">
+            Invalid phone number e.g +2348167229723
+          </div>
+        </div>
+        <!-- organization -->
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control"
+            id="floatingOrganization"
+            placeholder="Organization"
+            required
+          />
+          <label for="floatingOrganization">Organization</label>
+          <div class="invalid-feedback">
+            Field should only contain alphabets, 3 - 20 characters
+          </div>
+        </div>
+        <!-- message -->
+        <div class="form-floating mb-3">
+          <textarea
+            class="form-control"
+            placeholder="Leave a message here"
+            id="floatingMessage"
+            style="height: 100px"
+            required
+          ></textarea>
+          <label for="floatingMessage">Message</label>
+          <div class="invalid-feedback">
+            Message can only contain symbol . and ,
+          </div>
+        </div>
+        <!-- end inputs -->
+        <button
+          type="submit"
+          class="
+            btn btn-dark
+            submit-btn
+            animate__animated animate__heartBeat animate__infinite
+          "
+          id="submitBtn"
+        >
+          reach out
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
