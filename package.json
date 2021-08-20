@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "build": "rimraf dist && tsc",
+    "postbuild": "cpy --cwd=src --parents 'views/*.ejs' ../dist/",
     "start": "node dist/server.js",
     "dev": "ts-node-dev src/server.ts"
   },
@@ -27,6 +28,7 @@
     "@types/node": "^16.6.1",
     "config": "^3.3.6",
     "cors": "^2.8.5",
+    "cpy-cli": "^3.1.1",
     "dotenv": "^10.0.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",

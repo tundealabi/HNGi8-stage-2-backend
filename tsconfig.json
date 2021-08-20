@@ -57,7 +57,8 @@
   },
   "include": [
     "src/**/*.ts",
-    "src/config/*.json" /* Include every ts file in source folder */
+    "src/config/*.json",
+    "src/views/*.ejs" /* Include every ts file in source folder */
   ],
   "exclude": ["node_modules" /* exclude everything in  node_modules */]
 }
