@@ -1,5 +1,6 @@
 import config from 'config';
 import nodemailer from 'nodemailer';
+import SMTPTransport from 'nodemailer/lib/smtp-transport';
 console.log('hi from nodemail connect');
 console.log(config.get('nodemailer'));
 const transporter = nodemailer.createTransport({
@@ -7,6 +8,7 @@ const transporter = nodemailer.createTransport({
   host: 'smtp.gmail.com',
   secure: true,
   auth: {
+    type: 'OAuth2',
     user: config.get('nodemailer.mailServerUser'),
     pass: config.get('nodemailer.mailServerPass'),
     clientId: config.get('nodemailer.mailServerOauthClientId'),
@@ -17,6 +19,6 @@ const transporter = nodemailer.createTransport({
   tls: {
     rejectUnauthorized: false,
   },
-});
+} as SMTPTransport.Options);
 
 export default transporter;
