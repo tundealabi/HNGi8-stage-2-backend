@@ -3,11 +3,11 @@
 class FormSubmission {
   constructor() {
     this.patterns = {
-      floatingName: /^[a-zA-Z]+.?[a-zA-Z]*$/i,
+      floatingName: /^[a-zA-Z\s]{3,25}$/i,
       floatingMail: /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$/,
       floatingPhone: /^\+\d{13}$|^(080|090|070|081)\d{8}$/,
-      floatingOrganization: /f/i,
-      floatingMessage: /f/i,
+      floatingOrganization: /^[\w'\s]{5,20}$/i,
+      floatingMessage: /^[\w.,\s]{10,150}$/i,
     };
     this.form = document.getElementById('form');
     this.inputNotValidCount = document.querySelectorAll('.form-control').length;
@@ -84,11 +84,11 @@ class FormSubmission {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        recipientName: this.nameField.value,
-        recipientMail: this.emailField.value,
-        recipientPhone: this.phoneField.value,
-        recipientOrganization: this.organizationField.value,
-        recipientMessage: this.messageField.value,
+        recipientName: this.nameField.value.trim(),
+        recipientMail: this.emailField.value.trim(),
+        recipientPhone: this.phoneField.value.trim(),
+        recipientOrganization: this.organizationField.value.trim(),
+        recipientMessage: this.messageField.value.trim(),
       }),
     });
     const result = await response.json();
@@ -97,7 +97,7 @@ class FormSubmission {
       this.submitButton.textContent = 'message sent';
       this.resetForm();
       setTimeout(() => {
-        this.submitButton.textContent = 'reach out';
+        this.submitButton.textContent = 'send';
       }, 2000);
     } else {
       this.submitButton.textContent = 'error... resend';

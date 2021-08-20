@@ -35,7 +35,6 @@ app.post(
         recipientOrganization,
         recipientMessage,
       }: sendMailProps = req.body;
-      console.log(req.body);
       await sendReplyMail({
         recipientName,
         recipientMail,

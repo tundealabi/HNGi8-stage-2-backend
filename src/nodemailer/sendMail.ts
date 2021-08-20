@@ -47,7 +47,6 @@ const sendReplyMail = async ({
       },
     ],
   });
-  console.log('hi from sendmail');
 };
 
 export default sendReplyMail;
