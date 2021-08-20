@@ -5,6 +5,8 @@ import config from 'config';
 
 import app from '.';
 
+// task
+console.log('My name is Tunde Alabi');
 /**
  * Server Activation
  */
