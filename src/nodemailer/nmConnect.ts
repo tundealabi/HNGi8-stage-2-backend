@@ -1,6 +1,7 @@
 import config from 'config';
 import nodemailer from 'nodemailer';
 console.log('hi from nodemail connect');
+console.log(config.get('nodemailer'));
 const transporter = nodemailer.createTransport({
   port: 465,
   host: 'smtp.gmail.com',
